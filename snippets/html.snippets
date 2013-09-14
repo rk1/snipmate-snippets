@@ -115,9 +115,9 @@ snippet head
 snippet title
 	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
 snippet script
-	<script type="text/javascript" charset="utf-8">
-		${1}
-	</script>${2}
+	<script type="text/${1:javascript}">
+		${2}
+	</script>${3}
 snippet scriptsrc
 	<script src="${1}.js" type="text/javascript" charset="utf-8"></script>${2}
 snippet style
@@ -220,7 +220,7 @@ snippet input
 snippet label
 	<label for="${2:$1}">${1:name}</label><input type="${3:text/submit/hidden/button}" name="${4:$2}" value="${5}" id="${6:$2}"`Close()`>${7}
 snippet link
-	<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" charset="utf-8"`Close()`>${4}
+	<link rel="stylesheet" href="${1}" type="text/css" media="${2}">${3}
 snippet mailto
 	<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
 snippet meta
@@ -241,6 +241,14 @@ snippet tablen
 	<table width="${1}" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color:${2:#ffffff}">
 		${3}
 	</table>
+snippet thead
+	<thead>
+		${1}
+	</thead>
+snippet th
+	<th>
+		${1}
+	</th>
 snippet tr
 	<tr>
 		${1}

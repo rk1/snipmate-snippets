@@ -203,7 +203,7 @@ snippet dblclick
 		${3:// event handler}
 	});
 snippet delay
-	.delay("${1:slow/400/fast}"${2:, "queue name"})${3}
+	.delay(${1})${2}
 snippet dele
 	.delegate("${2:selector expression}", "${3:event name}", function (${4:e}) {
 		${5:// event handler}
@@ -241,16 +241,16 @@ snippet eventsmap
 snippet extend
 	$.extend(${1:true, }${2:target}, ${3:obj})${4}
 snippet fadein
-	.fadeIn("${1:slow/400/fast}")${2}
+	.fadeIn(${1})${2}
 snippet fadeinc
-	.fadeIn("${1:slow/400/fast}", function () {
-		${2:// callback};
+	.fadeIn(${1}, function () {
+		${2}
 	});
 snippet fadeout
-	.fadeOut("${1:slow/400/fast}")${2}
+	.fadeOut(${1})${2}
 snippet fadeoutc
-	.fadeOut("${1:slow/400/fast}", function () {
-		${2:// callback};
+	.fadeOut(${1}, function () {
+		${2}
 	});
 snippet fadeto
 	.fadeTo("${2:slow/400/fast}", ${3:0.5})${4}
