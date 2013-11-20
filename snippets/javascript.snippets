@@ -95,3 +95,15 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+# Get Element by id
+snippet gi
+	document.getElementById('${1}')${2:;}
+# addeventlistener
+snippet al
+	addEventListener('${1}', function(e) {
+		${0}
+	});
+snippet cl
+	console.log(${1});${9}
+snippet test
+	alert("test");${1}
