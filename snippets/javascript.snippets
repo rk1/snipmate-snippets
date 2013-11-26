@@ -1,8 +1,7 @@
 # Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
-		${4:// body...}
+snippet pr
+	${1}.prototype.${2} = function(${3}) {
+		${4}
 	};
 # Function
 snippet fun
@@ -88,7 +87,9 @@ snippet :f
 	}${3:,}
 # setTimeout function
 snippet timeout
-	setTimeout(function () {${3}}${2}, ${1:10});
+	setTimeout(function() {
+		${2}
+	}, ${1});
 # Get Elements
 snippet get
 	getElementsBy${1:TagName}('${2}')${3}
