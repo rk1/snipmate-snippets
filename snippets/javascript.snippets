@@ -55,7 +55,8 @@ snippet case
 	${0}
 # for (...) {...}
 snippet for
-	for (var i = 0; i < ${1}; i++) {
+	var i = 0;
+	for (i; i < ${1}; i++) {
 		${0}
 	}
 # while (...) {...}
@@ -94,12 +95,19 @@ snippet gett
 # Get Element by id
 snippet gi
 	document.getElementById('${1}')${0:;}
+#Get Elements by class name
+snippet gc
+	document.getElementsByClassName('${1}')${0:;}
+snippet qs
+	document.querySelectorAll('${1}')${0}
 # addeventlistener
 snippet al
 	addEventListener('${1}', function(e) {
 		${0}
 	});
 snippet cl
-	console.log(${1});${0}
+	console.log(${0});
 snippet test
 	alert("test");${0}
+snippet v
+	void(0);${0}
